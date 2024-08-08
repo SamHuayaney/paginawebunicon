@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff; /* Letras blancas por defecto */
+    background: url('FONDOFONDO.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.616); /* Oscurece la imagen de fondo */
+    z-index: -1; /* Coloca la capa de superposición detrás del contenido */
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* Centra la barra de navegación */
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0); /* Sin fondo para la barra de navegación */
+}
+
+.nav-bar {
+    width: 100%;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Centra los elementos de la barra de navegación */
+}
+
+.nav-bar li {
+    margin: 5px 10px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
+    font-weight: bold;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.nav-bar a:hover {
+    color: #007bff; /* Color al pasar el ratón sobre los enlaces */
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center;
+    height: 100vh; /* Asegura que el contenido principal ocupe toda la altura de la ventana */
+    margin: 0;
+    color: #fff; /* Texto blanco en la sección principal */
+    position: relative;
+    z-index: 1;
+}
+
+.main-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff; /* Letras blancas para "Bienvenido" */
+}
+
+.main-content p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.url-cuadro {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Asegura que el cuadro esté por encima del contenido */
+}
+
+.url-cuadro iframe {
+    width: 100%;
+    height: calc(100% - 40px); /* Resta el espacio para el botón de cerrar */
+}
+
+.url-cuadro button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+}
+
+.url-cuadro button:hover {
+    background: #0056b3;
+}

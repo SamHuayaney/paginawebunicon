@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="stylesB.css">
+    <link rel="stylesheet" href="stylesSlider.css"> <!-- Incluye el CSS del slider -->
+</head>
+<body>
+    <div class="overlay"></div> <!-- Capa de superposición para oscurecer el fondo -->
+    <header class="header">
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="bienvenido.html">Bienvenida</a></li>
+                <li><a href="#" onclick="showUrl()">Huella</a></li>
+                <li><a href="noticias.html">Blog</a></li>
+                <li><a href="infografia.html">Infografías</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="equipo.html#mision-container">Misión</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <h1>BIENVENIDO</h1>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <a href="https://www.tiktok.com/@villa.verd?_t=8ogzQ4Q8yHN&_r=1" target="_blank">
+                        <img src="tiktokprom1.jpeg" alt="Anuncio 1">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="https://www.instagram.com/villa.verd?igsh=MTViZ3IzamltaHNsag==" target="_blank">
+                        <img src="instagramprom1.jpeg" alt="Anuncio 2">
+                    </a>
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+    <div id="url-cuadro" class="url-cuadro">
+        <button onclick="hideUrl()">Cerrar</button>
+        <iframe id="url-iframe" src="" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+    <script src="java.js"></script> <!-- Incluye el JavaScript del slider -->
+</body>
+</html>
